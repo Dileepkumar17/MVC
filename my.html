@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+:root{
+    --hue: #6a6969;
+    --saturation: 70%;
+    --lightness: 55%;
+    --main-color: hsl(var(--hue),var(--saturation),var(--lightness));
+    --text-white: hsl(0,0%,100%);
+    --text-light-grey: hsl(0,0%,96%);
+    --text-x-dark-grey: hsl(0,0%,10%);
+    --text-green: rgb(179, 250, 250);
+    --body-bg-color: hsl(var(--hue), 60%, 94%);
+    --bg-color: hsl(var(--hue),60%,96%);
+    --bg-green: rgb(179, 250, 250);
+    --border-color: hsl(var(--hue),48%,80%);
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.h1{
+    text-transform: uppercase;
+    color: var(--bg-green);
+    text-align: center;
+}
+.content {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--main-color);
+  color: var(--text-white);
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn1 {
+    display: inline-block;
+    padding: 10px 28px;
+    background-color:var(--text-green) ;
+    color: var(--text-x-dark-grey);
+    font-weight: 500;
+    font-size: var(--fs-md);
+    text-transform: capitalize;
+    line-height: 1.5;
+    font-family: inherit;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+#myBtn1:hover {
+    color: var(--text-green);
+    border-color: var(--text-x-dark-grey);
+   background-color: transparent;
+}
+#myBtn2 {
+    display: inline-block;
+    padding: 10px 28px;
+    background-color:var(--text-green) ;
+    color: var(--text-x-dark-grey);
+    font-weight: 500;
+    font-size: var(--fs-md);
+    text-transform: capitalize;
+    line-height: 1.5;
+    font-family: inherit;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    user-select: none;
+    transition: all 0.3s ease;
+    position: fixed;
+    right: 100px;
+}
+
+#myBtn2:hover {
+    color: var(--text-green);
+    border-color: var(--text-x-dark-grey);
+   background-color: transparent;
+}
+#p1{
+  text-align: center;
+  text-transform: capitalize;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="https://player.vimeo.com/external/402679728.hd.mp4?s=d24e05f20b7e859ad5bc7adc30c707e689c01078&profile_id=174" type="video/mp4">
+</video>
+
+<div class="content">
+  <h1 class="h1">Mountains,Caves & Valley (M,V,C)</h1>
+  <p class="p" id="p1">Total info bout Mountains, Valleys & Caves</p>
+  <a href="https://www.appsheet.com/start/76b69f20-da19-4148-a6ce-dc9c29749ebd#view=M%20%2CV%26%20C" class="button" id="myBtn1">web site</a> <a href="https://storage.googleapis.com/appsheet-prod-whitelabel/apks/apk-b375d2bc-b10a-4a4d-b411-7edba41b2df3.apk?GoogleAccessId=appsheet-whitelabeller%40appsheet-prod.iam.gserviceaccount.com&Expires=1665619200&Signature=4zZmF7gZfrkP4FJd4oWn4w7wt1IjzZZujlYjCOleCJ5%2BrTI%2B5tsHMS%2FZzNVrDimxrCrDAVf5rUywAUidwWUUFeuG4WlL2BZMjkaV%2F0H2P54o2pO990lCBARFlz6WJX6Rv21IS8sKlN53dNYyOPaZIUDtN6NfNaSuGZZ28gM1mPLPSm5lTcD4DnMpiZhRQB%2FmWWj23hzhQS9hlgcdCSV9O46jWD1HUCpjnyXMw%2BQC0jpE5julUQALTvBhGniFDoO%2FHVsBzwjv%2B7xKFbaNI3sX%2Fw4lP1jwNXKjAvolj9XS%2BeM%2FS6ImXT6utk%2B7TnbmX0ln%2Bn8yKlkqVhxJ7lhI%2F%2BI9xg%3D%3D" class="buttn" id="mybtn2">Download</a>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+</script>
+
+</body>
+</html>
